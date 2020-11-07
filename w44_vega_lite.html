@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Make Over Monday Week 44</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+  </head>
+  <body>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+      var spec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {"url":"https://download.data.world/s/squwwxr2osh7uwepxk7v245egnvegj","format":{"type":"csv"}},
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "internet", "type": "quantitative"},
+    "y": {"field": "gap_internet", "type": "quantitative"}
+  }
+};
+
+      vegaEmbed('#vis', spec);
+    </script>
+  </body>
+</html>
